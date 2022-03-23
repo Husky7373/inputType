@@ -10,31 +10,94 @@
     <div class="content">
         <h1>Ice Cream Shoppe</h1>
         <form>
+            <fieldset>
+                <legend>Customer:</legend>
+                <div class="row">
+                    <div>
+                        <label for="firstname">First</label>
+                        <input id="firstname" name="first_name" type="text">
+                    </div>
+                    <div>
+                        <label for="lastname">Last</label>
+                        <input id="lastname" name="last_name" type="text">
+                    </div>
+                </div>
+            </fieldset>
             <div class="row">
-                <div>
-                    <label for="firstname">First</label>
-                    <input id="firstname" name="first_name" type="text">
-                </div>
-                <div>
-                    <label for="lastname">Last</label>
-                    <input id="lastname" name="last_name" type="text">
-                </div>
+                <fieldset>
+                    <legend>Flavor:</legend>
+                    <div>
+                        <div>
+                            <input id="vanilla" name="icecream" type="radio">
+                            <label for="vanilla">Vanilla</label>
+                        </div>
+                        <div>
+                            <input id="chocolate" name="icecream" type="radio">
+                            <label for="chocolate">Chocolate</label>
+                        </div>
+                        <div>
+                            <input id="strawberry" name="icecream" type="radio">
+                            <label for="strawberry">Strawberry</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Size:</legend>
+                    <div>
+                        <div>
+                            <input id="small" name="size" type="radio">
+                            <label for="small">Small</label>
+                        </div>
+                        <div>
+                            <input id="med" name="size" type="radio">
+                            <label for="med">Medium</label>
+                        </div>
+                        <div>
+                            <input id="large" name="size" type="radio">
+                            <label for="large">Large</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Toppings:</legend>
+                    <div>
+                        <div>
+                            <input id="Sprinkles" name="Sprinkles" type="checkbox" value="sprinkles">
+                            <label for="Sprinkles">Sprinkles</label>
+                        </div>
+                        <div>
+                            <input id="Whippedcream" name="Whippedcream" type="checkbox" value="Whippedcream">
+                            <label for="Whippedcream">Whipped Cream</label>
+                        </div>
+                        <div>
+                            <input id="Carmelsauce" name="Carmelsauce" type="checkbox" value="Carmelsauce">
+                            <label for="Carmelsauce">Carmel Sauce</label>
+                        </div>
+                    </div>
+                </fieldset>
             </div>
-            <div>
+            <fieldset>
+                <legend>Cup Or Cone:</legend>
                 <div>
-                    <input id="vanilla" name="icecream" type="radio">
-                    <label for="vanilla">Vanilla</label>
+                    <label for="container">Please Choose One</label>
+                    <select name="container" id="container">
+                        <option value="cup">Platsic Cup</option>
+                        <option value="sugar">Sugar Cone</option>
+                        <option value="waffle">Waffle Cone</option>
+                        <option value="dipped">Chocolate Dipped Waffle Cone</option>
+                    </select>
                 </div>
+            </fieldset>
+            <fieldset>
+                <legend>Cup Or Cone:</legend>
                 <div>
-                    <input id="chocolate" name="icecream" type="radio">
-                    <label for="chocolate">Chocolate</label>
+                    <label for="SpecialRequest">Special Requests: </label>
+                    <textarea id="SpecialRequest" name="SpecialRequest" rows="4" cols="10"
+                              placeholder="Allergic to peanuts, substitutions, etc."></textarea>
                 </div>
-                <div>
-                    <input id="strawberry" name="icecream" type="radio">
-                    <label for="strawberry">Strawberry</label>
-                </div>
-            </div>
-
+            </fieldset>
+            <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
+            <button type="submit">Submit Order</button>
         </form>
     </div>
 </div>
